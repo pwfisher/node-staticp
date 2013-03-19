@@ -1,17 +1,20 @@
-node-static
+node-staticp
 ===========
 
-> a simple, *rfc 2616 compliant* file streaming module for [node](http://nodejs.org)
+> a simple, *rfc 2616 compliant* file streaming module for [node](http://nodejs.org) plus *postscript* support
 
 node-static has an in-memory file cache, making it highly efficient.
 node-static understands and supports *conditional GET* and *HEAD* requests.
 node-static was inspired by some of the other static-file serving modules out there,
 such as node-paperboy and antinode.
 
+The postscript feature will append a common include file to every html document response body.
+Both a *postscript* in the dictionary sense, and a feature well-suited to **post**load content with a **script**.
+
 Synopsis
 --------
 
-    var static = require('node-static');
+    var static = require('node-staticp');
 
     //
     // Create a node-static server instance to serve the './public' folder
@@ -137,7 +140,7 @@ Relative path of a file to append to every HTML response body.
 
 example: `{ postscript: "inc/postscript.html" }`
 
-> Defaults to false (disabled)
+> Defaults to `false` (disabled)
 
 #### `serverInfo` #
 
@@ -158,11 +161,11 @@ example: `{ 'X-Hello': 'World!' }`
 Command Line Interface
 ----------------------
 
-`node-static` also provides a CLI.
+`node-staticp` also provides a CLI.
 
 ### Installation #
 
-    $ npm install -g node-static
+    $ npm install -g node-staticp
 
 ### Example Usage #
 

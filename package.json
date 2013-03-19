@@ -1,13 +1,17 @@
 {
-  "name" : "node-static",
-  "description" : "simple, compliant file streaming module for node",
+  "name" : "node-staticp",
+  "description" : "simple, compliant file streaming module for node with 'postscript'",
   "url" : "http://github.com/cloudhead/node-static",
-  "keywords" : ["http", "static", "file", "server"],
+  "keywords" : ["http", "static", "file", "server", "postscript"],
   "author" : "Alexis Sellier <self@cloudhead.net>",
   "contributors" : [
     {
       "name": "Pablo Cantero",
       "email": "pablo@pablocantero.com"
+    },
+    {
+      "name": "Patrick Fisher",
+      "email": "patrick@pwfisher.com"
     }
   ],
   "repository": {
@@ -33,4 +37,3 @@
   "version" : "0.6.5",
   "engines" : { "node": ">= 0.4.1" }
 }
-
