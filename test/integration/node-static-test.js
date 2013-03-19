@@ -1,11 +1,11 @@
 var vows    = require('vows')
   , request = require('request')
   , assert  = require('assert')
-  , static  = require('../../lib/node-static');
+  , static  = require('../../lib/node-staticp');
 
 var fileServer = new(static.Server)(__dirname + '/../fixtures', {serverInfo: 'custom-server-name'});
 
-var suite = vows.describe('node-static');
+var suite = vows.describe('node-staticp');
 
 var TEST_PORT = 8080;
 var TEST_SERVER = 'http://localhost:' + TEST_PORT;
@@ -182,7 +182,7 @@ suite.addBatch({
     topic : function(){
       request.head(TEST_SERVER + '/index.html', this.callback);
     },
-    'should respond with node-static/0.6.0' : function(error, response, body){
+    'should respond with node-staticp/0.6.0' : function(error, response, body){
       assert.equal(response.headers['server'], 'custom-server-name');
     }
   }

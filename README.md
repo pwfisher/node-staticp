@@ -3,9 +3,9 @@ node-staticp
 
 > a simple, *rfc 2616 compliant* file streaming module for [node](http://nodejs.org) plus *postscript* support
 
-node-static has an in-memory file cache, making it highly efficient.
-node-static understands and supports *conditional GET* and *HEAD* requests.
-node-static was inspired by some of the other static-file serving modules out there,
+node-staticp has an in-memory file cache, making it highly efficient.
+node-staticp understands and supports *conditional GET* and *HEAD* requests.
+node-staticp was inspired by some of the other static-file serving modules out there,
 such as node-paperboy and antinode.
 
 The postscript feature will append a common include file to every html document response body.
@@ -17,7 +17,7 @@ Synopsis
     var static = require('node-staticp');
 
     //
-    // Create a node-static server instance to serve the './public' folder
+    // Create a node-staticp server instance to serve the './public' folder
     //
     var file = new(static.Server)('./public');
 
@@ -33,7 +33,7 @@ Synopsis
 API
 ---
 
-### Creating a node-static Server #
+### Creating a node-staticp Server #
 
 Creating a file server instance is as simple as:
 
@@ -44,7 +44,7 @@ directory, pass it as the first argument:
 
     new static.Server('./public');
 
-You can also specify how long the client is supposed to cache the files node-static serves:
+You can also specify how long the client is supposed to cache the files node-staticp serves:
 
     new static.Server('./public', { cache: 3600 });
 
@@ -106,7 +106,7 @@ has been served successfully, or if there was an error serving the file:
         });
     }).listen(8080);
 
-Note that if you pass a callback, and there is an error serving the file, node-static
+Note that if you pass a callback, and there is an error serving the file, node-staticp
 *will not* respond to the client. This gives you the opportunity to re-route the request,
 or handle it differently.
 
@@ -148,7 +148,7 @@ Sets the `Server` header.
 
 example: `{ serverInfo: "myserver" }`
 
-> Defaults to `node-static/{version}`
+> Defaults to `node-staticp/{version}`
 
 #### `headers` #
 

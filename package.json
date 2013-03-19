@@ -1,7 +1,7 @@
 {
   "name" : "node-staticp",
   "description" : "simple, compliant file streaming module for node with 'postscript'",
-  "url" : "http://github.com/cloudhead/node-static",
+  "url" : "http://github.com/pwfisher/node-staticp",
   "keywords" : ["http", "static", "file", "server", "postscript"],
   "author" : "Alexis Sellier <self@cloudhead.net>",
   "contributors" : [
@@ -16,9 +16,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/cloudhead/node-static"
+    "url": "http://github.com/pwfisher/node-staticp"
   },
-  "main" : "./lib/node-static",
+  "main" : "./lib/node-staticp",
   "scripts": {
     "test": "vows --spec --isolate"
   },

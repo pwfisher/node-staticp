@@ -3,7 +3,7 @@
 var fs = require('fs'),
     path = require('path'),
     tty = require('tty'),
-    statik = require('./../lib/node-static');
+    statik = require('./../lib/node-staticp');
 
     var argv = require('optimist')
         .usage([
@@ -21,7 +21,7 @@ var fs = require('fs'),
         })
         .option('version', {
             alias: 'v',
-            description: 'node-static version'
+            description: 'node-staticp version'
         })
         .option('headers', {
             alias: 'H',
@@ -67,7 +67,7 @@ if (argv.help){
 }
 
 if (argv.version){
-    console.log('node-static', statik.version.join('.'));
+    console.log('node-staticp', statik.version.join('.'));
     process.exit(0);
 }
 
