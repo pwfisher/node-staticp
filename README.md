@@ -131,6 +131,13 @@ Passing `false` will disable the `Cache-Control` header.
 
 > Defaults to `3600`
 
+#### `postscript` #
+
+Relative path of a file to append to every HTML response body.
+
+example: `{ postscript: "inc/postscript.html" }`
+
+> Defaults to false (disabled)
 
 #### `serverInfo` #
 
