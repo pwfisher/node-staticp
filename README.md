@@ -17,9 +17,12 @@ Synopsis
     var static = require('node-staticp');
 
     //
-    // Create a node-staticp server instance to serve the './public' folder
+    // Create a node-staticp server instance to serve './public/{domain}' folders.
     //
-    var file = new(static.Server)('./public');
+    var file = new(static.Server)('./public', {
+        isMultiDomain: true,
+        postscript: 'inc/postscript.html'
+    });
 
     require('http').createServer(function (request, response) {
         request.addListener('end', function () {
