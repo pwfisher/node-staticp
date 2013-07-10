@@ -1,10 +1,16 @@
 {
-  "name" : "node-staticp",
-  "description" : "simple, compliant file streaming module for node with 'postscript'",
-  "url" : "http://github.com/pwfisher/node-staticp",
-  "keywords" : ["http", "static", "file", "server", "postscript"],
-  "author" : "Alexis Sellier <self@cloudhead.net>",
-  "contributors" : [
+  "name": "node-staticp",
+  "description": "simple, compliant file streaming module for node with 'postscript'",
+  "url": "http://github.com/pwfisher/node-staticp",
+  "keywords": [
+    "http",
+    "static",
+    "file",
+    "server",
+    "postscript"
+  ],
+  "author": "Alexis Sellier <self@cloudhead.net>",
+  "contributors": [
     {
       "name": "Pablo Cantero",
       "email": "pablo@pablocantero.com"
@@ -18,22 +24,24 @@
     "type": "git",
     "url": "http://github.com/pwfisher/node-staticp"
   },
-  "main" : "./lib/node-staticp",
+  "main": "./lib/node-staticp",
   "scripts": {
     "test": "vows --spec --isolate"
   },
   "bin": {
     "static": "bin/cli.js"
   },
-  "license" : "MIT",
-  "dependencies" : {
+  "license": "MIT",
+  "dependencies": {
     "optimist": ">=0.3.4",
     "colors": ">=0.6.0"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "request": "latest",
     "vows": "latest"
   },
-  "version" : "0.6.5",
-  "engines" : { "node": ">= 0.4.1" }
+  "version": "1.1.0",
+  "engines": {
+    "node": ">= 0.4.1"
+  }
 }
